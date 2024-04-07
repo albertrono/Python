@@ -1,0 +1,28 @@
+languages = ['Python',"Java", " C++","JavaScript"]
+del languages[0]
+print("List after del: ",languages)
+# Adding element to the list using append()
+languages.append("C")
+print("List after append: ",languages)
+languages.extend(["Ruby"])
+print("List after extend: ",languages)
+languages.insert(1, 'PHP')#insert works with a specific index
+print("List after insert: ",languages)
+print(languages.index("JavaScript") )#Returns the first occurrence of value in the list
+print(len(languages)) # Returns number of elements in the list 
+languages.remove('C') #Removes the first occurrence of value from the list
+print("List after remove: ",languages)
+print(languages.count('Java')) #Count how many times an element appears in the list
+languages.sort() #Sorts the list in ascending order
+print("List after sort: ",languages)
+languages.reverse() #Reverses the list
+print("List after reverse: ",languages)
+languages.pop()
+print("List after pop: ",languages) #Removes and returns last item in the
+
+#Iterating through the list using loops
+print("List after Iterating")
+for language in languages:
+    print(language)
+    
+#Using while loop for iteration
